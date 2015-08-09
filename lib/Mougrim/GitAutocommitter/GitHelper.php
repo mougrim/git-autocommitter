@@ -28,6 +28,9 @@ class GitHelper
     {
         $this->shellHelper->runCommand('git status --short', $output);
         foreach(explode("\n", $output) as $line) {
+            if (!$line) {
+                continue;
+            }
             list($status, $changedFile) = explode(" ", $line);
             if ($file === trim($changedFile)) {
                 return true;
