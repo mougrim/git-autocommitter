@@ -1,0 +1,21 @@
+{
+    "name": "mougrim/git-autocommitter",
+    "type": "project",
+    "description": "Git autocommitter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mougrim",
+            "email": "rinat@mougrim.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "mitallast/php-logger": "1.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mougrim\\GitAutocommitter\\": "lib/Mougrim/GitAutocommitter"
+        }
+    }
+}
